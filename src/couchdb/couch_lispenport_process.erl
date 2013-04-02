@@ -37,7 +37,10 @@
 % for simplifying your erlang view code.  It is expected other third-party
 % extensions will evolve which offer useful layers on top of this view server
 % to help simplify your view code.
--module(couch_native_process).
+%
+% This module is a modified version of couch_native_proces.erl
+%
+-module(couch_lispenport_process).
 -behaviour(gen_server).
 
 -export([start_link/0,init/1,terminate/2,handle_call/3,handle_cast/2,code_change/3,
